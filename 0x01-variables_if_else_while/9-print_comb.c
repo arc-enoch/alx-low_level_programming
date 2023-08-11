@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print all possible combinations of single digit numbers
  *
- * Description: Prints all possible combinations of single-digit numbers.
- * Numbers must be separated by a comma and a space.
- * Numbers should be printed in ascending order.
- * You can only use the putchar function.
- *
- * Return: Always 0 (Success)
+ * Return - Always 0 (Success)
  */
 int main(void)
 {
@@ -27,5 +22,4 @@ int main(void)
 
     putchar('\n');
     return (0);
-}
 }

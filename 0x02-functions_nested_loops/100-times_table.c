@@ -1,4 +1,4 @@
-#include "main.h"
+#include "_putchar.c"
 
 /**
  * print_times_table - prints the n times table

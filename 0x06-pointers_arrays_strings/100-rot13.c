@@ -1,28 +1,28 @@
 #include "main.h"
-
 /**
- * rot13 - Encodes a string using ROT13 cipher.
- * @s: The input string.
- *
- * Return: A pointer to the modified string.
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
  */
+
 char *rot13(char *s)
 {
+	int count = 0, i;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13_alphabet[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKL
-		M";
-	int i, j;
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; alphabet[j] != '\0'; j++)
+
+		for (i = 0; i < 52; i++)
 		{
-			if (s[i] == alphabet[j])
+			if (*(s + count) == alphabet[i])
 			{
-				s[i] = rot13_alphabet[j];
+				*(s + count) = rot13[i];
 				break;
 			}
 		}
+		count++;
 	}
 
 	return (s);

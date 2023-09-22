@@ -2,6 +2,7 @@
 #define _LINKED_LIST
 
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 
 /**
